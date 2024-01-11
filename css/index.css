@@ -60,6 +60,38 @@ Dùng CSS:
 /* css cho màn hình nhỏ hơn 900px */
 @media only screen and (max-width: 900px) {
     .desktop {
+        display: none !important;
+    }
+
+    .header-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-mobile img {
+        width: 150px;
+    }
+
+    .header-mobile i {
+        font-size: 30px;
+    }
+
+    .header-mobile .logo i {
+        margin-right: 20px;
+    }
+
+    .header-mobile .logo {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .header-mobile {
         display: none;
     }
+
+
+
 }
