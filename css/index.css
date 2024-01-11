@@ -1,0 +1,65 @@
+/*
++++Css Priority+++ (thứ tự tăng dần)
+
+- universal selector (*) - Độ ưu tiên thấp nhất trong css
+- internal css, external css
+- tagname (css thông qua tên thẻ) - Độ ưu tiên thấp hơn id và class
+- class (css thông qua class) - Độ ưu tiên cao hơn tagname
+- id (css thông qua id) - Độ ưu tiên cao hơn class và tagname
+- inline css - Độ ưu tiên cao hơn id, class và tagname
+- !important - Độ ưu tiên cao nhất trong css
+
+*/
+
+/*
+Dùng CSS:
+    - Inline CSS 
+    - Internal CSS
+    - External CSS
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #404040CC;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__button {
+    margin: 0 10px;
+
+}
+
+.header__button button {
+    color: #09B451;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+}
+
+.header__button button.register {
+    color: white;
+    background-color: #09B451;
+    border: none;
+    padding: 12px 24px;
+    gap: 10px;
+}
+
+/* css cho màn hình nhỏ hơn 900px */
+@media only screen and (max-width: 900px) {
+    .desktop {
+        display: none;
+    }
+}
